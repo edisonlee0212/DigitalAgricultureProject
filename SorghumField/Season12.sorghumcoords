@@ -1,6 +1,6 @@
-sorghum_state_generator:
-  asset_handle_: 4304987869200140871
-  asset_type_name_: SorghumStateGenerator
+sorghum_generator:
+  asset_handle_: 1765328976826654380
+  asset_type_name_: SorghumGenerator
 rotation_variance: [0, 0, 0]
 sample_x: [0, 5]
 sample_y: [0, 5]
