@@ -123,7 +123,7 @@ leaf_branching_angle:
         - [0.100000001, 0]
   deviation:
     min_value: 0
-    max_value: 10
+    max_value: 2
     curve:
       tangent_: true
       min_: [0, 0]
@@ -379,6 +379,17 @@ waviness_along_leaf:
     - [0.100000001, 0]
     - [-0.100000001, 0]
     - [0.355263144, 0.49473685]
+    - [0.100000001, 0]
+    - [-0.100000001, 0]
+    - [1, 0]
+    - [0.100000001, 0]
+curling_along_leaf:
+  tangent_: true
+  min_: [0, 0]
+  max_: [1, 1]
+  values_:
+    - [-0.100000001, 0]
+    - [0, 0]
     - [0.100000001, 0]
     - [-0.100000001, 0]
     - [1, 0]
