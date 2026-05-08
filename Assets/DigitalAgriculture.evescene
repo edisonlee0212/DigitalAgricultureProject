@@ -1,11 +1,11 @@
 environment:
   background_color: [1, 1, 1]
-  environment_gamma: 2.20000005
-  ambient_light_intensity: 0.800000012
+  environment_gamma: 2.2
+  ambient_light_intensity: 0.8
   environment_type: 0
   environmental_map:
     asset_handle_: 0
-    asset_type_name_: ""
+    type_name_: ""
 main_camera:
   entity_handle_: 3527047279513998964
   private_component_type_name_: Camera
@@ -21,18 +21,22 @@ entity_metadata_list:
         x: 1
         y: 1
         use_clear_color: false
-        clear_color: [0, 0, 0]
-        near_distance: 0.100000001
+        clear_color: [0, 0, 0, 1]
+        near_distance: 0.1
         far_distance: 200
         fov: 120
         background_intensity: 1
-        exposure: 1
+        fade_ratio: 0.8
+        fade_factor: 1
+        sample_size: 4
+        bounce: 4
+        gamma: 2.2
         skybox:
-          asset_handle_: 77
-          asset_type_name_: Mesh
-        post_processing_stack:
           asset_handle_: 0
-          asset_type_name_: ""
+          type_name_: ""
+        post_processing_stack_ref:
+          asset_handle_: 6697502232085491011
+          type_name_: PostProcessingStack
   - n: Directional Light
     h: 13332601746832410179
     e: true
@@ -42,11 +46,11 @@ entity_metadata_list:
       - tn: DirectionalLight
         e: true
         cast_shadow: true
-        bias: 0.100000001
+        bias: 0.1
         diffuse: [1, 1, 1]
         diffuse_brightness: 1
-        light_size: 0.00999999978
-        normal_offset: 0.0500000007
+        light_size: 0.01
+        normal_offset: 0.05
   - n: PlayGround
     h: 2552677734200797964
     e: true
@@ -60,6 +64,9 @@ entity_metadata_list:
           asset_type_name_: SoilDescriptor
 systems_:
   []
+LocalAssets:
+  - type_name: PostProcessingStack
+    handle: 6697502232085491011
 data_component_storage_list:
   - entity_size: 130
     chunk_capacity: 126
